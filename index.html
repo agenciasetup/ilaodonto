@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ILA · Instituto Leliane Andrade | Odontologia Integrativa em Porto Velho e Caxias do Sul</title>
+<meta name="description" content="ILA, Instituto Leliane Andrade: odontologia integrativa de bebês a idosos e o Protocolo TMB para quem tem traumas, medos e bloqueios com o dentista. Atendimento presencial em Porto Velho (RO) e Caxias do Sul (RS), e online.">
+<meta property="og:title" content="ILA · Instituto Leliane Andrade | Odontologia Integrativa">
+<meta property="og:description" content="Se você já adiou o dentista por medo, talvez só nunca tenha sido atendido da forma certa. Agende sua avaliação no ILA.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FBF6EC">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="icon" type="image/svg+xml" href="assets/brand/simbolo-verde.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<script>
+  // Decide antes de pintar: com movimento permitido, os elementos começam escondidos para entrar animados.
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("anima");
+</script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/",
+    "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.js",
+    "gsap/ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/ScrollTrigger.js"
+  }
+}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5.1 5.3-1.4A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.82.83-3.04-.2-.31a8.2 8.2 0 1 1 6.97 3.86Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.16.25-.63.8-.78.97-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.66.31c-.23.25-.86.85-.86 2.07s.88 2.4 1 2.57c.13.16 1.74 2.66 4.2 3.73.59.25 1.05.4 1.4.52.6.19 1.13.16 1.56.1.47-.07 1.46-.6 1.66-1.18.2-.58.2-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+</svg>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a class="logo" href="#recepcao" aria-label="Instituto Leliane Andrade, voltar ao início"><img src="assets/brand/logo-horizontal-verde.svg" alt="Instituto Leliane Andrade, Odontologia Integrativa"></a>
+    <nav aria-label="Ambientes do Instituto">
+      <ul>
+        <li><a href="#conversa">Protocolo TMB</a></li>
+        <li><a href="#consultorio">Tratamentos</a></li>
+        <li><a href="#dra">A Dra.</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+    </nav>
+    <a class="btn js-zap" href="#agenda" data-msg="Olá, Dra. Leliane! Vim pelo site e quero agendar minha avaliação."><svg><use href="#i-zap"/></svg><span>Agendar avaliação</span></a>
+  </div>
+</header>
+
+<div class="voce-esta" id="voce-esta" aria-hidden="true"><b>1</b><span><small>Você está na</small><em class="nome">Recepção</em></span></div>
+
+<main>
+
+<!-- ========== 01 · RECEPÇÃO ========== -->
+<section class="ambiente recepcao" id="recepcao" data-sala="1" data-nome="Recepção">
+  <div class="wrap">
+    <div class="hero-texto">
+      <span class="placa" data-surgir><b>1</b>Recepção · ILA Instituto</span>
+      <h1 aria-label="Se você já adiou o dentista por medo, talvez só nunca tenha sido atendido da forma certa.">
+        <span class="linha"><span>Se você já adiou</span></span>
+        <span class="linha"><span>o dentista por medo,</span></span>
+        <span class="linha"><span>talvez só nunca tenha sido</span></span>
+        <span class="linha"><span>atendido da forma <em>certa</em>.</span></span>
+      </h1>
+      <p class="intro" data-surgir>Sou a Dra. Leliane Andrade, dentista integrativa. No ILA, o cuidado começa antes: na forma de escutar, de avaliar e de conduzir cada caso. Para quem tem traumas, medos e bloqueios, criei o Protocolo TMB.</p>
+      <div class="acoes" data-surgir>
+        <a class="btn btn-laranja js-zap" href="#agenda" data-msg="Olá, Dra. Leliane! Vim pelo site e quero agendar minha avaliação."><svg><use href="#i-zap"/></svg>Agendar minha avaliação</a>
+        <a class="link-seta" href="#conversa">Conhecer o Protocolo TMB <span>→</span></a>
+      </div>
+      <ul class="credenciais" data-surgir>
+        <li><strong>10 anos</strong>de atuação</li>
+        <li><strong>0 a 100</strong>de bebês a idosos</li>
+        <li><strong>RO · RS</strong>presencial e online</li>
+      </ul>
+    </div>
+
+    <figure class="palco" id="palco" aria-label="Símbolo do Instituto Leliane Andrade em 3D, que acompanha o movimento do cursor">
+      <span class="chao" aria-hidden="true"></span>
+      <img class="reserva" src="assets/brand/simbolo-verde.svg" alt="">
+      <canvas aria-hidden="true"></canvas>
+      <span class="chip chip-1" data-flutua="26"><i></i>Acolhimento primeiro</span>
+      <span class="chip chip-2" data-flutua="-34"><i></i>No seu tempo</span>
+      <span class="chip chip-3" data-flutua="18"><i></i>Decisão sem pressa</span>
+      <span class="arraste" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 12h16M4 12l3-3M4 12l3 3M20 12l-3-3M20 12l-3 3"/></svg>Arraste para girar</span>
+    </figure>
+  </div>
+  <a class="rolar-dica" href="#espera">Entre<i></i></a>
+</section>
+
+<!-- Friso -->
+<div class="friso" aria-hidden="true">
+  <div class="friso-trilho">
+    <div class="friso-grupo">
+      <span>Odontologia integrativa</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Traumas, medos e bloqueios</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Ozonioterapia</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Sem metais</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>De bebês a idosos</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Presencial e online</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Sorrir é para todos, sempre</span><img src="assets/brand/simbolo-verde.svg" alt="">
+    </div>
+    <div class="friso-grupo">
+      <span>Odontologia integrativa</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Traumas, medos e bloqueios</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Ozonioterapia</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Sem metais</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>De bebês a idosos</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Presencial e online</span><img src="assets/brand/simbolo-verde.svg" alt="">
+      <span>Sorrir é para todos, sempre</span><img src="assets/brand/simbolo-verde.svg" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- ========== 02 · SALA DE ESPERA ========== -->
+<section class="ambiente espera" id="espera" data-sala="2" data-nome="Sala de espera">
+  <div class="wrap">
+    <div class="lado">
+      <span class="placa" data-surgir><b>2</b>Sala de espera</span>
+      <h2 data-surgir>Toda desculpa tem uma <em>história</em> por trás.</h2>
+      <p class="intro" data-surgir>Muitas vezes, o medo não nasce agora. Ele vem de lá atrás, de uma experiência que marcou, machucou ou assustou. Ninguém deveria carregar isso sozinho, e muito menos deixar de cuidar da saúde por causa disso. Seu medo faz sentido.</p>
+    </div>
+    <div>
+      <ol class="pensamentos" data-surgir-grupo>
+        <li><s>“Eu tenho medo de ir ao dentista.”</s>Aqui, você é <em>acolhido</em> antes de qualquer procedimento.</li>
+        <li><s>“Depois eu vejo isso.”</s>Começar agora pode ser mais <em>leve</em> do que você imagina.</li>
+        <li><s>“Não tô sentindo nada.”</s>Nem todo problema dói no começo.</li>
+        <li><s>“Tô sem tempo pra cuidar disso agora.”</s>Cuidar antes evita tratamentos mais complexos depois.</li>
+        <li><s>“Agora não é prioridade.”</s>Sua saúde começa pela boca, e impacta o <em>todo</em>.</li>
+      </ol>
+      <div class="stories" id="stories" aria-label="Frases de quem tem medo de dentista" hidden></div>
+      <div class="virada" data-surgir>
+        <img src="assets/brand/simbolo-laranja.svg" alt="">
+        <p>Isso tem nome: <em>traumas, medos e bloqueios</em>. E tem um jeito diferente de cuidar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 03 · SALA DE CONVERSA (Protocolo TMB) ========== -->
+<section class="ambiente conversa escuro porta" id="conversa" data-sala="3" data-nome="Sala de conversa">
+  <div class="wrap">
+    <div class="cab">
+      <span class="placa" data-surgir><b>3</b>Sala de conversa · Método exclusivo</span>
+      <h2 data-surgir>Protocolo TMB: primeiro a gente entende a sua <em>história</em>. Depois, cuida dos dentes.</h2>
+      <p class="intro" data-surgir>Um protocolo de diagnóstico que criei para quem teve experiências ruins em outros consultórios e quer voltar a cuidar da saúde bucal, mas não consegue. A ideia não é forçar ninguém: é entender e desmistificar o que te afasta da cadeira, cuidando da saúde bucal e também da mental.</p>
+    </div>
+
+    <div class="tmb">
+      <div class="tmb-letra" aria-hidden="true">
+        <i class="anel"></i>
+        <span class="ativa">T</span><span>M</span><span>B</span>
+      </div>
+      <ol class="tmb-itens">
+        <li class="tmb-item ativo" data-letra="0">
+          <span class="letra-movel" aria-hidden="true">T</span>
+          <small>T de</small>
+          <h3>Trauma</h3>
+          <p>Uma experiência, muitas vezes na infância, que marcou, machucou ou assustou. A gente reconhece essa história antes de qualquer procedimento, porque ela explica muito do que você sente hoje.</p>
+        </li>
+        <li class="tmb-item" data-letra="1">
+          <span class="letra-movel" aria-hidden="true">M</span>
+          <small>M de</small>
+          <h3>Medo</h3>
+          <p>Aquele aperto no peito só de pensar na cadeira, no barulho, no cheiro. Seu medo faz sentido, e entender de onde ele vem muda a forma de conduzir cada etapa do atendimento.</p>
+        </li>
+        <li class="tmb-item" data-letra="2">
+          <span class="letra-movel" aria-hidden="true">B</span>
+          <small>B de</small>
+          <h3>Bloqueio</h3>
+          <p>Quando você quer se cuidar, mas não consegue dar o passo. Aqui o bloqueio é respeitado e trabalhado no seu tempo, nunca forçado.</p>
+        </li>
+      </ol>
+    </div>
+
+    <ol class="passos" data-surgir-grupo>
+      <li><b>i.</b><h3>Escuta</h3><p>Antes de qualquer procedimento, a conversa. Você conta a sua história com calma.</p></li>
+      <li><b>ii.</b><h3>Avaliação com critério</h3><p>O diagnóstico TMB e uma investigação a fundo, porque nem todo desconforto começa onde aparece.</p></li>
+      <li><b>iii.</b><h3>Expectativa alinhada</h3><p>Um plano explicado, que respeita o tempo de cada tratamento. Decisão aqui não é pressa.</p></li>
+      <li><b>iv.</b><h3>Responsabilidade compartilhada</h3><p>Você entende o processo e cuida junto, com prevenção. Entender o processo muda o resultado.</p></li>
+    </ol>
+    <div class="acoes" data-surgir>
+      <a class="btn btn-creme js-zap" href="#agenda" data-msg="Olá, Dra. Leliane! Quero saber mais sobre o Protocolo TMB."><svg><use href="#i-zap"/></svg>Quero começar pelo TMB</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 04 · CONSULTÓRIO (scroll horizontal) ========== -->
+<section class="ambiente consultorio" id="consultorio" data-sala="4" data-nome="Consultório" data-horizontal>
+  <div class="consultorio-fixo">
+    <div class="trilho" data-trilho>
+      <div class="abertura">
+        <span class="placa"><b>4</b>Consultório · Tratamentos</span>
+        <h2 style="margin-top:22px">Odontologia para a família inteira, de <em>bebês a idosos</em>.</h2>
+        <p class="intro">Do primeiro dentinho ao sorriso dos avós (de 0 a 100 anos), com o mesmo olhar integrativo: tratar a causa, não só o sintoma.</p>
+        <p class="dica" aria-hidden="true">Role para conhecer <span>→</span></p>
+      </div>
+
+      <article class="cadeira c1">
+        <div class="ilustra"><span class="num">01</span><span class="selo">Exclusivo</span><img src="assets/brand/simbolo-creme.svg" alt="" data-parallax-x></div>
+        <div class="texto"><h3>Protocolo TMB</h3><p>Para quem tem traumas, medos e bloqueios e quer voltar a cuidar da saúde bucal com acolhimento.</p></div>
+      </article>
+      <article class="cadeira c2">
+        <div class="ilustra"><span class="num">02</span><img src="assets/brand/elemento-2-verde.svg" alt="" data-parallax-x></div>
+        <div class="texto"><h3>Odontologia integrativa</h3><p>Olhar para a pessoa inteira, não só para a boca. Muitas vezes, o sintoma é só a ponta do iceberg.</p></div>
+      </article>
+      <article class="cadeira c3">
+        <div class="ilustra"><span class="num">03</span><img src="assets/brand/elemento-3-laranja.svg" alt="" data-parallax-x></div>
+        <div class="texto"><h3>Ozonioterapia odontológica</h3><p>Recurso terapêutico complementar, aplicado por dentista ozonioterapeuta e indicado caso a caso.</p></div>
+      </article>
+      <article class="cadeira c4">
+        <div class="ilustra"><span class="num">04</span><img src="assets/brand/simbolo-verde.svg" alt="" data-parallax-x></div>
+        <div class="texto"><h3>Odontologia sem metais</h3><p>Tratamentos com materiais livres de metais, dentro da visão integrativa de saúde. Indicação feita na avaliação.</p></div>
+      </article>
+      <article class="cadeira c5">
+        <div class="ilustra"><span class="num">05</span><img src="assets/brand/elemento-2-creme.svg" alt="" data-parallax-x></div>
+        <div class="texto"><h3>Dentista da família</h3><p>Bebês, crianças, adultos e idosos. Cuidar cedo e com carinho evita que o medo se forme.</p></div>
+      </article>
+      <article class="cadeira c6">
+        <div class="ilustra"><span class="num">06</span><img src="assets/brand/elemento-3-verde.svg" alt="" data-parallax-x></div>
+        <div class="texto"><h3>Prevenção e hábitos</h3><p>Desgaste, sensibilidade e pequenas fraturas podem vir de hábitos do dia a dia. Identificar a causa cedo preserva o sorriso.</p></div>
+      </article>
+      <article class="cadeira c7">
+        <div class="ilustra"><span class="num">07</span><img src="assets/brand/elemento-2-laranja.svg" alt="" data-parallax-x></div>
+        <div class="texto"><h3>Produtos e treinamentos</h3><p>Produtos selecionados para o cuidado em casa e capacitações para profissionais da odontologia.</p></div>
+      </article>
+    </div>
+  </div>
+  <div class="progresso" aria-hidden="true"><i data-progresso></i></div>
+  <div class="pontos" id="pontos" aria-hidden="true"></div>
+</section>
+
+<!-- ========== 05 · JARDIM (Odontologia integrativa) ========== -->
+<section class="ambiente jardim porta" id="jardim" data-sala="5" data-nome="Jardim interno">
+  <div class="wrap">
+    <div>
+      <span class="placa" data-surgir><b>5</b>Jardim interno · Odontologia integrativa</span>
+      <h2 data-surgir>O problema nem sempre começa na boca. Mas é <em>ali</em> que ele aparece.</h2>
+      <p class="intro" data-surgir>Na odontologia integrativa, a gente não olha só para a boca: olha para a pessoa inteira. Saúde geral, hábitos, emoções e história entram no diagnóstico, porque nem todo desconforto é só sobre dentes.</p>
+      <p data-surgir>A saúde da boca está ligada ao organismo todo. Por isso dor, inchaço, sangramento ou sensibilidade não devem ser normalizados. Tratar a causa muda tudo no resultado.</p>
+      <p class="citacao" data-surgir>“Um bom resultado não é só estética.”</p>
+    </div>
+    <div class="circulos" aria-label="Boca, corpo e mente, cuidados juntos">
+      <div class="c boca" data-circulo><span>Boca</span></div>
+      <div class="c corpo" data-circulo><span>Corpo</span></div>
+      <div class="c mente" data-circulo><span>Mente</span></div>
+      <img class="centro" src="assets/brand/simbolo-verde.svg" alt="" data-circulo>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 06 · SALA DA DRA. ========== -->
+<section class="ambiente dra" id="dra" data-sala="6" data-nome="Sala da Dra.">
+  <div class="wrap">
+    <figure class="retrato" data-surgir>
+      <img class="forma" src="assets/brand/elemento-2-laranja.svg" alt="">
+      <div class="moldura">
+        <!-- FOTO: coloque a foto em assets/fotos/dra-leliane.jpg (vertical, 4:5) -->
+        <div class="foto-vazia"><div><img src="assets/brand/simbolo-creme.svg" alt=""><small>assets/fotos/dra-leliane.jpg</small></div></div>
+        <img class="foto" src="assets/fotos/dra-leliane.jpg" alt="Dra. Leliane Andrade no Instituto" data-parallax onerror="this.remove()">
+      </div>
+      <figcaption class="legenda"><span>Fig. 01</span>Dra. Leliane Andrade, dentista integrativa e ozonioterapeuta.</figcaption>
+    </figure>
+    <div>
+      <span class="placa" data-surgir><b>6</b>Sala da Dra.</span>
+      <h2 data-surgir>Prazer, eu sou a <em>Leliane</em>.</h2>
+      <div data-surgir-grupo style="margin-top:28px">
+        <p class="capitular">Muito antes do consultório, existem histórias que moldam a forma como a gente escolhe cuidar. A minha passa pela família, pelos valores que carrego e pela forma como aprendi a olhar cada pessoa como única.</p>
+        <p>Sou dentista integrativa e ozonioterapeuta, há 10 anos cuidando de pacientes de bebês a idosos, em Rondônia e no Rio Grande do Sul. Com a mesma seriedade que levo a profissão, levo a vida, a família e cada decisão dentro do consultório.</p>
+        <p>Foi pensando em quem desistiu de se tratar depois de experiências ruins que criei o Protocolo TMB e o ILA: um espaço pensado nos detalhes para oferecer um atendimento com mais atenção, mais critério e mais responsabilidade.</p>
+      </div>
+      <div class="assinatura" data-surgir>
+        <strong>Dra. Leliane Andrade</strong>
+        <span>CRO RO 3061 · CRO RS 33946</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 07 · MURAL (depoimentos) ========== -->
+<section class="ambiente mural" id="mural" data-sala="7" data-nome="Mural">
+  <div class="wrap">
+    <div class="caixa" data-surgir>
+      <div>
+        <span class="placa"><b>7</b>Mural · Histórias reais</span>
+        <h2 style="margin-top:22px">Quem tinha medo, hoje volta <em>sorrindo</em>.</h2>
+        <p class="intro">Uma paciente chegou depois de anos sem ir ao dentista, carregando um trauma da infância. Decidiu tentar de novo. Desde aquela primeira consulta, já se passaram 6 anos, e o medo ficou para trás.</p>
+        <p class="relato">“Para mim, não existe resultado mais bonito do que esse: devolver a alguém a tranquilidade de entrar em um consultório.” <span>Dra. Leliane Andrade</span></p>
+        <a class="btn btn-linha" href="https://www.instagram.com/ilaodonto/" target="_blank" rel="noopener">Ver depoimentos no Instagram</a>
+      </div>
+      <div class="quadros">
+        <!-- DEPOIMENTOS: só depoimentos reais e autorizados. Arquivos: assets/fotos/depoimento-1.jpg e depoimento-2.jpg -->
+        <div class="quadro"><div class="foto-vazia"><div><img src="assets/brand/simbolo-creme.svg" alt=""><small>depoimento-1.jpg</small></div></div><img class="foto" src="assets/fotos/depoimento-1.jpg" alt="Depoimento de paciente" onerror="this.remove()"></div>
+        <div class="quadro"><div class="foto-vazia"><div><img src="assets/brand/simbolo-creme.svg" alt=""><small>depoimento-2.jpg</small></div></div><img class="foto" src="assets/fotos/depoimento-2.jpg" alt="Depoimento de paciente" onerror="this.remove()"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 08 · ENDEREÇOS ========== -->
+<section class="ambiente enderecos" id="enderecos" data-sala="8" data-nome="Endereços">
+  <div class="wrap">
+    <span class="placa" data-surgir><b>8</b>Onde atendemos</span>
+    <h2 data-surgir>Presencial em RO e RS. E também <em>online</em>.</h2>
+    <div class="cidades" data-surgir-grupo>
+      <article class="cidade">
+        <div>
+          <small>Rondônia</small>
+          <h3>Porto Velho</h3>
+          <!-- ENDEREÇO: substituir pelo endereço completo -->
+          <p>ILA · Instituto Leliane Andrade</p>
+        </div>
+        <a class="link-seta js-zap" href="#agenda" data-msg="Olá! Quero agendar uma avaliação em Porto Velho.">Agendar <span>→</span></a>
+      </article>
+      <article class="cidade">
+        <div>
+          <small>Rio Grande do Sul</small>
+          <h3>Caxias do Sul</h3>
+          <!-- ENDEREÇO: substituir pelo endereço completo -->
+          <p>Atendimento com a Dra. Leliane Andrade</p>
+        </div>
+        <a class="link-seta js-zap" href="#agenda" data-msg="Olá! Quero agendar uma avaliação em Caxias do Sul.">Agendar <span>→</span></a>
+      </article>
+      <article class="cidade">
+        <div>
+          <small>De onde você estiver</small>
+          <h3>Online</h3>
+          <p>Consulta com a Dra. Leliane a distância</p>
+        </div>
+        <a class="link-seta js-zap" href="#agenda" data-msg="Olá! Quero saber como funciona o atendimento online.">Agendar <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 09 · AGENDA ========== -->
+<section class="ambiente agenda escuro porta" id="agenda" data-sala="9" data-nome="Agenda">
+  <div class="wrap">
+    <div>
+      <span class="placa" data-surgir><b>9</b>Agenda · Primeiro passo</span>
+      <h2 data-surgir>Me conte um pouco sobre você. O resto a gente faz <em>junto</em>.</h2>
+      <p class="intro" data-surgir>Leva menos de um minuto. Sua mensagem chega no WhatsApp do ILA e a equipe responde para combinar o melhor horário.</p>
+      <ul class="garantias" data-surgir-grupo>
+        <li>Sem compromisso, com acolhimento</li>
+        <li>Porto Velho, Caxias do Sul ou online: você escolhe</li>
+        <li>Pode contar o seu medo: ele faz parte do diagnóstico</li>
+      </ul>
+    </div>
+    <div id="lugar-ficha"></div>
+    <form class="ficha" id="ficha" novalidate data-surgir>
+      <h3>Ficha de chegada</h3>
+      <p>Preencha e continue a conversa no WhatsApp.</p>
+      <div class="campo"><label for="nome">Seu nome</label><input id="nome" name="nome" autocomplete="name" required placeholder="Como podemos te chamar?"></div>
+      <div class="duplo">
+        <div class="campo"><label for="telefone">WhatsApp</label><input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(00) 00000-0000"></div>
+        <div class="campo"><label for="cidade">Atendimento</label>
+          <select id="cidade" name="cidade" required>
+            <option value="">Selecione</option>
+            <option>Porto Velho (RO)</option>
+            <option>Caxias do Sul (RS)</option>
+            <option>Online</option>
+          </select>
+        </div>
+      </div>
+      <fieldset>
+        <legend>O que te trouxe aqui?</legend>
+        <div class="opcoes">
+          <label><input type="radio" name="motivo" value="Tenho medo ou trauma de dentista" checked>Tenho medo ou trauma</label>
+          <label><input type="radio" name="motivo" value="Quero uma avaliação geral">Avaliação geral</label>
+          <label><input type="radio" name="motivo" value="Ozonioterapia">Ozonioterapia</label>
+          <label><input type="radio" name="motivo" value="Odontologia sem metais">Sem metais</label>
+          <label><input type="radio" name="motivo" value="Atendimento para minha família ou filho">Família ou criança</label>
+          <label><input type="radio" name="motivo" value="Produtos ou treinamentos">Produtos e treinamentos</label>
+        </div>
+      </fieldset>
+      <div class="campo"><label for="mensagem">Quer contar mais? (opcional)</label><textarea id="mensagem" name="mensagem" placeholder="Ex.: faz 5 anos que não vou ao dentista porque tive uma experiência ruim..."></textarea></div>
+      <button class="btn btn-laranja" type="submit"><svg><use href="#i-zap"/></svg>Enviar e falar no WhatsApp</button>
+      <p class="aviso">Seus dados são usados só para o seu agendamento.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ========== 10 · DÚVIDAS ========== -->
+<section class="ambiente duvidas" id="duvidas" data-sala="10" data-nome="Dúvidas">
+  <div class="wrap">
+    <div class="lado">
+      <span class="placa" data-surgir><b>10</b>Dúvidas</span>
+      <h2 data-surgir>Pode perguntar. Aqui não existe pergunta <em>boba</em>.</h2>
+      <p class="intro" data-surgir>Se a sua dúvida não estiver aqui, chama no WhatsApp que a gente responde.</p>
+      <a class="link-seta js-zap" href="#agenda" data-msg="Olá! Tenho uma dúvida antes de agendar." data-surgir>Tirar dúvida no WhatsApp <span>→</span></a>
+    </div>
+    <div data-surgir-grupo>
+      <details class="pergunta" open><summary>Tenho vergonha do estado dos meus dentes. E agora?<i></i></summary><p>É muito mais comum do que você imagina, e aqui ninguém vai te julgar. Quem passou anos longe do dentista quase sempre teve um motivo. Nosso trabalho começa entendendo esse motivo, não apontando o problema.</p></details>
+      <details class="pergunta"><summary>E se eu travar no meio da consulta?<i></i></summary><p>Aqui o atendimento respeita o tempo de cada paciente. Nada é decidido com pressa, e cada etapa é explicada antes. Entender o que você sente faz parte do Protocolo TMB.</p></details>
+      <details class="pergunta"><summary>Na primeira consulta já vou fazer algum procedimento?<i></i></summary><p>Não precisa. A primeira consulta é para conversar, entender a sua história e avaliar. Nenhum procedimento é feito sem você entender e concordar.</p></details>
+      <details class="pergunta"><summary>O que é odontologia integrativa?<i></i></summary><p>É uma forma de cuidar que olha o paciente como um todo. Além dos dentes, consideramos saúde geral, hábitos e emoções, porque tudo isso influencia a saúde da boca, e vice-versa.</p></details>
+      <details class="pergunta"><summary>O que é ozonioterapia na odontologia?<i></i></summary><p>É um recurso terapêutico complementar que pode ser usado em alguns tratamentos odontológicos. A indicação é sempre individual e feita na avaliação, por dentista habilitada em ozonioterapia.</p></details>
+      <details class="pergunta"><summary>Vocês atendem bebês, crianças e idosos?<i></i></summary><p>Sim, de bebês a idosos. Para os pequenos, cuidar cedo e com carinho evita que o medo se forme. Para os mais velhos, paciência e explicação em cada etapa.</p></details>
+      <details class="pergunta"><summary>O que é odontologia sem metais?<i></i></summary><p>É a escolha de materiais livres de metais nos tratamentos, dentro da visão integrativa de saúde. A indicação é feita na avaliação, caso a caso.</p></details>
+      <details class="pergunta"><summary>Tem atendimento online?<i></i></summary><p>Sim. Além do atendimento presencial em Porto Velho (RO) e Caxias do Sul (RS), a Dra. Leliane também atende online. Chame no WhatsApp para saber como funciona.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 11 · SAÍDA ========== -->
+<section class="ambiente saida escuro" id="saida" data-sala="11" data-nome="Saída">
+  <img class="simbolo-fundo" src="assets/brand/simbolo-creme.svg" alt="" data-gira>
+  <div class="wrap">
+    <span class="placa" data-surgir><b>11</b>Até a próxima visita</span>
+    <h2 data-surgir>Começar agora pode ser mais <em>leve</em> do que você imagina.</h2>
+    <p class="intro" data-surgir>O ILA está de portas abertas. O primeiro passo é só uma mensagem.</p>
+    <div data-surgir><a class="btn btn-laranja js-zap" href="#agenda" data-msg="Olá, Dra. Leliane! Vim pelo site e quero agendar minha avaliação."><svg><use href="#i-zap"/></svg>Agendar minha avaliação</a></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div>
+      <img src="assets/brand/logo-horizontal-creme.svg" alt="Instituto Leliane Andrade">
+      <p>Instituto com abordagem integrativa. Presencial em RO e RS, e online. Sorrir é para todos, sempre.</p>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a class="js-zap" href="#agenda" data-msg="Olá! Vim pelo site.">WhatsApp (69) 99902-1899</a></li>
+        <li><a href="https://www.instagram.com/ilaodonto/" target="_blank" rel="noopener">Instagram @ilaodonto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Unidades</h4>
+      <ul><li>Porto Velho, RO</li><li>Caxias do Sul, RS</li></ul>
+    </div>
+    <div class="legal">
+      <span>Responsável técnica: Dra. Leliane Andrade · CRO RO 3061 · CRO RS 33946</span>
+      <span>© <span id="ano">2026</span> Instituto Leliane Andrade</span>
+    </div>
+  </div>
+</footer>
+
+<a class="zap js-zap" href="#agenda" data-msg="Olá, Dra. Leliane! Vim pelo site e quero agendar minha avaliação." aria-label="Falar no WhatsApp"><svg><use href="#i-zap"/></svg></a>
+
+
+<!-- Navegação estilo app (só no celular) -->
+<nav class="abas" id="abas" aria-label="Navegação rápida">
+  <a href="#recepcao" data-aba="recepcao" class="ativa"><svg viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z"/></svg><span>Início</span></a>
+  <a href="#conversa" data-aba="conversa"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9.6A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7 2.4c0 5.3-7 9.6-7 9.6z"/></svg><span>TMB</span></a>
+  <button type="button" class="aba-central" id="abrir-ficha" aria-haspopup="dialog" aria-controls="folha"><span class="bola"><svg viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="3"/><path d="M8 3.5v4M16 3.5v4M4 10h16M12 13v4M10 15h4"/></svg></span><span>Agendar</span></button>
+  <a href="#consultorio" data-aba="consultorio"><svg viewBox="0 0 24 24"><path d="M7.5 4.5c-2 0-3.5 1.6-3.5 4 0 3 1.2 4.4 1.8 7.3.4 2 .9 3.7 2 3.7 1.6 0 1.4-4.8 4.2-4.8s2.6 4.8 4.2 4.8c1.1 0 1.6-1.7 2-3.7.6-2.9 1.8-4.3 1.8-7.3 0-2.4-1.5-4-3.5-4-1.8 0-2.6 1-4.5 1s-2.7-1-4.5-1z"/></svg><span>Tratamentos</span></a>
+  <a href="#dra" data-aba="dra"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c.8-3.7 3.8-6 7.5-6s6.7 2.3 7.5 6"/></svg><span>A Dra.</span></a>
+</nav>
+
+<!-- Folha que sobe de baixo com a ficha (celular) -->
+<div class="folha-fundo" id="folha-fundo" hidden></div>
+<section class="folha" id="folha" role="dialog" aria-modal="true" aria-labelledby="folha-titulo" hidden>
+  <div class="folha-alca" id="folha-alca"><i></i></div>
+  <div class="folha-topo">
+    <div><small>Agenda</small><h2 id="folha-titulo">Agendar avaliação</h2></div>
+    <button type="button" class="folha-fechar" id="fechar-ficha" aria-label="Fechar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="folha-corpo" id="folha-corpo"></div>
+</section>
+
+<script src="js/site.js"></script>
+<script type="module" src="js/animacoes.js"></script>
+<script type="module" src="js/simbolo3d.js"></script>
+</body>
+</html>
